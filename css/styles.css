@@ -54,6 +54,7 @@ margin-right: auto;
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
   padding: 12px 38px;
   border: 0;
   background-color: var(--primary);
@@ -63,6 +64,7 @@ margin-right: auto;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.3s ease;
   }
 
@@ -93,7 +95,7 @@ margin-right: auto;
   margin-right: 10px;
   background-color: var(--primary);
   content: "";
-  transition: width 0.3 ease;
+  transition: width 0.3s ease;
 }
 
 .lined-link:hover::before {
@@ -162,7 +164,7 @@ margin-right: auto;
   font-size: 15px;
   color: #333;
   text-decoration: none;
-  transition: border-bottom 0.3s aese ;
+  transition: border-bottom 0.3s ease;
 }
 
 .sitenav-link:hover {
@@ -201,12 +203,21 @@ margin-right: auto;
   color: #000;
 }
 
+.lead-cta-white .lead-cta-heading {
+  color: #fff;
+}
+
 .lead-cta-text {
   padding-left: 37px;
   border-left: 3px solid #888;
   margin-top: 0;
   margin-bottom: 30px;
   color: #777;
+}
+
+.lead-cta-white .lead-cta-text {
+  border-color: #fff;
+  color: #fff;
 }
 
 /* FEATURES */
@@ -258,6 +269,40 @@ margin-right: auto;
 }
 
 
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
+
 
 /* RETINA BG */
 @media
@@ -273,180 +318,3 @@ only screen and (                min-resolution: 2dppx) {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FEATURES */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.features-learn-more-link {
-  display: flex;
-  text-decoration: none;
-}
-
-.features-red-line-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-right: 10px;
-}
-
-.features-red-line {
-  width: 40px;
-  border-bottom: 3px solid var(--accent-color);
-}
-
-.features-learn-more-text {
-}
- */
-
-/* SALE-SECTION */
-/* .sale-content-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.sale-container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.sale-content-heading {
-  width: 380px;
-  padding: 0;
-}
-
-.sale-content-heading-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-}
-
-.sale-content-heading-link:hover {
-  color: var(--accent-color);
-}
-
-.sale-content-heading-link:active {
-  color: var(--accent-color);
-  opacity: 0.6;
-}
-
-.seale-content-text {
-  color: #777;
-  border-left: 3px solid #888;
-}
-
-.sale-content-button {
-  width: 260px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 0;
-  color: #fff;
-  background-color: var(--accent-color);
-  border: 0;
-}
-
-.sale-img {
-  width: 400px;
-  height: 600px;
-} */
-
-
-/* EXPLORE */
-/* .explore-section {
-  max-width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/runners.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.explore-container {
-  display: flex;
-  justify-content: end;
-  padding-top: 240px;
-  padding-bottom: 239px;
-}
-
-.explore-content {
-  width: 490px;
-}
-
-.explore-content-heading-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  --outline-color: 2px dashed #fff;
-}
-
-.explore-content-heading-link:hover {
-  color: var(--accent-color);
-}
-
-.explore-content-heading-link:active {
-  color: var(--accent-color);
-  opacity: 0.6;
-
-}
-
-.explore-content-text {
-  color: #fff;
-  border-left: 3px solid #fff;
-} */
-
-/* RETINA BGS */
-/* @media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-  .explore-section{
-    background-image: url(../img/runners@2x.jpg);
-  }
-} */
