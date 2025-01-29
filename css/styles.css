@@ -34,6 +34,12 @@ max-width: 100%;
 height: auto;
 }
 
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
+
 /* CONTAINER */
 .container {
 width: 100%;
@@ -130,10 +136,6 @@ margin-right: auto;
 
 
 
-*:focus {
-  outline: var(--outline-color);
-  outline-offset: 4px;
-}
 
 
 
