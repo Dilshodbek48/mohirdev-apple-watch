@@ -177,6 +177,9 @@ margin-right: auto;
   padding-bottom: 6px;
   border: 0;
   border-bottom: 1px solid #333;
+
+  /* Bu videodagi darsda qo`shilmagan ekan o`zim qo`shdim!!! */
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /* HERO */
@@ -315,6 +318,12 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero {
     background-image: url(../img/intro-bg@2x.jpg);
+  }
+
+
+  /* Bu videodagi darsda qo`shilmagan ekan o`zim qo`shdim!!! */
+  .runners {
+    background-image: url(../img/runners@2x.jpg);
   }
 
 }
